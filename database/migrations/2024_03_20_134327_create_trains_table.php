@@ -18,8 +18,7 @@ return new class extends Migration {
             $table->string('train_code', 10)->unique();
             $table->tinyInteger('coach_number');
             $table->string('departure_station');
-            $table->date('departure_date');
-            $table->timestamp('departure_time');
+            $table->timestamp('departure_date_time');
             $table->string('arrive_station');
             $table->dateTime('estimate_arrive_date_time')->nullable();
             $table->boolean('is_in_time')->nullable();
