@@ -26,6 +26,7 @@ return new class extends Migration {
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
+
             $table->string('price')->after('deleted');
 
         });
