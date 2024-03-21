@@ -19,6 +19,8 @@
         @empty
         No train found
         @endforelse
+
+        {{$trains->links()}}
     </div>
 </section>
 @endsection

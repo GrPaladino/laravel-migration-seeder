@@ -11,7 +11,7 @@ class TrainController extends Controller
     public function index()
     {
 
-        $trains = Train::all();
+        $trains = Train::paginate(10);
         return view('train.show', compact('trains'));
 
     }
